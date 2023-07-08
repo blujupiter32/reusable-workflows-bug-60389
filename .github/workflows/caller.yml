@@ -1,0 +1,8 @@
+name: Caller workflow
+
+on: workflow_dispatch
+
+jobs:
+  call:
+    name: Call other workflow
+    uses: ./.github/workflows/called.yml

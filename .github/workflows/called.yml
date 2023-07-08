@@ -1,0 +1,10 @@
+name: Called workflow
+
+on: workflow_call
+
+jobs:
+  do-not-run:
+    name: This job should not run
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "This job should not run."
